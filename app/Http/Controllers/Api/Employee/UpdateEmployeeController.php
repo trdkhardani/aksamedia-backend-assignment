@@ -11,7 +11,14 @@ class UpdateEmployeeController extends Controller
 {
     public function index(Request $request, $employeeId)
     {
-        $employee = Employee::findOrFail($employeeId);
+        $employee = Employee::find($employeeId);
+
+        if (!$employee) { // jika data karyawan yang dicari tidak ada
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Karyawan tidak ditemukan',
+            ], 404);
+        }
 
         $employeeData = $request->validate([
             'employee_photo' => ['image'],

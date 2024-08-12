@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\Auth\LoginController;
 use App\Http\Controllers\Api\DivisionController;
 use App\Http\Controllers\Api\Employee\CreateEmployeeController;
+use App\Http\Controllers\Api\Employee\DeleteEmployeeController;
 use App\Http\Controllers\Api\Employee\ReadEmployeeController;
 use App\Http\Controllers\Api\Employee\UpdateEmployeeController;
 use Illuminate\Http\Request;
@@ -30,4 +31,5 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::get('/employees',[ ReadEmployeeController::class, 'index']);
     Route::post('/employees',[ CreateEmployeeController::class, 'index']);
     Route::put('/employees/{employee_id}',[ UpdateEmployeeController::class, 'index']);
+    Route::delete('/employees/{employee_id}',[ DeleteEmployeeController::class, 'index']);
 });
