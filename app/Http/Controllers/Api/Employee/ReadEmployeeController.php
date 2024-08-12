@@ -25,7 +25,7 @@ class ReadEmployeeController extends Controller
         $employeesData = collect($employees->items())->map(function ($employee) {
             return [
                 'id' => $employee->employee_id,
-                'image' => $employee->employee_photo,
+                'image' => url('/storage/' . $employee->employee_photo),
                 'name' => $employee->employee_name,
                 'phone' => $employee->employee_phone,
                 'division' => [
