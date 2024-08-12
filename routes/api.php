@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\Auth\LoginController;
+use App\Http\Controllers\Api\Auth\LogoutController;
 use App\Http\Controllers\Api\DivisionController;
 use App\Http\Controllers\Api\Employee\CreateEmployeeController;
 use App\Http\Controllers\Api\Employee\DeleteEmployeeController;
@@ -32,4 +33,6 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/employees',[ CreateEmployeeController::class, 'index']);
     Route::put('/employees/{employee_id}',[ UpdateEmployeeController::class, 'index']);
     Route::delete('/employees/{employee_id}',[ DeleteEmployeeController::class, 'index']);
+
+    Route::post('/logout', [LogoutController::class, 'logout']);
 });
