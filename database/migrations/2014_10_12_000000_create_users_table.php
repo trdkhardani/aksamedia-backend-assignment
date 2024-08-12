@@ -15,12 +15,14 @@ return new class extends Migration
             $table->uuid('user_id')->primary();
             $table->string('name');
             $table->string('username')->unique();
+            $table->string('phone', 15)->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
+
     }
 
     /**

@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
                 'user_id' => Str::uuid(),
                 'name' => 'Admin',
                 'username' => 'admin',
+                'phone' => '088256260123',
                 'email' => 'admin@gmail.com',
                 'password' => bcrypt('pastibisa'),
             ]
