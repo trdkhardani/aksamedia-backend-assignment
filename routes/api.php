@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\Auth\LoginController;
 use App\Http\Controllers\Api\DivisionController;
+use App\Http\Controllers\Api\Employee\ReadEmployeeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,4 +25,5 @@ Route::post('/login',[ LoginController::class, 'authenticate']);
 
 Route::middleware('auth:sanctum')->group(function(){
     Route::get('/divisions',[ DivisionController::class, 'index']);
+    Route::get('/employees',[ ReadEmployeeController::class, 'index']);
 });

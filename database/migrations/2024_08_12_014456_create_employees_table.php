@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('employee_photo');
             $table->string('employee_name', 50);
             $table->string('employee_phone', 15);
-            $table->string('position', 20);
+            $table->string('employee_position', 20);
             $table->timestamps();
 
             // Define FK

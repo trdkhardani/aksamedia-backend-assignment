@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Division;
+use App\Models\Employee;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -74,6 +75,28 @@ class DatabaseSeeder extends Seeder
             [
                 'division_id' => 'e6f5d4c3-4567-4b9a-8e6d-2f7c9e0b1a7c',
                 'division_name' => 'UI/UX Designer',
+            ]
+        );
+
+        Employee::create(
+            [
+                'employee_id' => Str::uuid(),
+                'division_id' => 'a5b7c8d9-2345-4a7b-9e8f-0f6c7d8b9a3c',
+                'employee_photo' => '',
+                'employee_name' => 'Tridiktya Putra',
+                'employee_phone' => 'Tridiktya Putra',
+                'employee_position' => 'Backend Intern',
+            ]
+        );
+
+        Employee::create(
+            [
+                'employee_id' => Str::uuid(),
+                'division_id' => 'c9d8e7f6-3456-4b8a-9f7d-1e6c8f9b0d7c',
+                'employee_photo' => '',
+                'employee_name' => 'Ahmad Joni',
+                'employee_phone' => 'Ahmad Joni',
+                'employee_position' => 'Frontend Intern',
             ]
         );
     }
