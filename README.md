@@ -1,5 +1,12 @@
 # Aksamedia: Back End - Web Developer Intern Test
-Tes masuk magang Backend Developer di PT Aksamedia Mulia Digital dirancang untuk mengevaluasi pemahaman dan kemampuan Anda dalam membuat api serta mengukur pemahaman anda terhadap sql. Tes ini juga akan mengevaluasi kemampuan logika anda dalam menyelesaikan masalah.
+Link API: https://aksamedia-backend-assignment-production-1baa.up.railway.app/api/
+
+Kredensial tertera [di sini](#tugas-1)
+
+## Profil
+Nama: Tridiktya Hardani Putra
+
+PT: Institut Teknologi Sepuluh Nopember (ITS) Surabaya
 
 ## Requirement
 - Laravel
