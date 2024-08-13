@@ -21,7 +21,7 @@ class UpdateEmployeeController extends Controller
         }
 
         $employeeData = $request->validate([
-            'employee_photo' => ['image'],
+            'employee_photo' => ['required', 'image'],
             'employee_name' => ['required'],
             'employee_phone' => ['required', 'string', 'max:15'],
             'division_id' => ['required'],

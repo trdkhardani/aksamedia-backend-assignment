@@ -1,7 +1,9 @@
 # Aksamedia: Back End - Web Developer Intern Test
 Link API: https://aksamedia-backend-assignment-production-1baa.up.railway.app/api/
 
-Kredensial tertera [di sini](#tugas-1)
+Kredensial tertera [di sini](#tugas-1).
+
+Update: Tambahan data untuk users dengan username "admin02" dan "admin03". Password sama dengan yang tertera [di sini](#tugas-1).
 
 ## Profil
 Nama: Tridiktya Hardani Putra
