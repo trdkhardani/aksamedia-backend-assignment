@@ -41,7 +41,7 @@ class ReadEmployeeController extends Controller
             return response()->json([
                 'status' => 'error',
                 'message' => 'Tidak berhasil menemukan karyawan ' . $request->employee_name,
-            ]);
+            ], 404);
         }
 
         return response()->json([
